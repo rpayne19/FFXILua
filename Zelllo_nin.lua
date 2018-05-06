@@ -36,7 +36,7 @@ function user_setup()
 
     gear.MovementFeet = {name="Danzo Sune-ate"}
     gear.DayFeet = "Danzo Sune-ate"
-    gear.NightFeet = "Hachiya Kyahan"
+    gear.NightFeet = "Hachiya Kyahan +3"
     
     select_movement_feet()
     select_default_macro_book()
@@ -258,7 +258,7 @@ function init_gear_sets()
 		body="Hiza. Haramaki +1",
 		hands="Hachiya Tekko +3",
 		legs="Hachiya Hakama +3",
-		feet="Hachiya Kyahan +3",
+		feet=gear.MovementFeet,
 		neck="Twilight Torque",
 		waist="Flume Belt",
 		left_ear="Steelflash Earring",
