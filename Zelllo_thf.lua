@@ -67,7 +67,7 @@ end
 function user_unload()
     send_command('unbind ^`')
     send_command('unbind !-')
-	sent_command('unbind ^w')
+	send_command('unbind ^w')
 end
 
 -- Define sets and vars used by this job file.
@@ -332,7 +332,7 @@ function init_gear_sets()
 		body="Meg. Cuirie +2",
 		hands="Meg. Gloves +2",
 		legs="Mummu Kecks +1",
-		feet="Fajin Boots",
+		feet="Jute Boots +1",
 		neck="Sanctity Necklace",
 		waist="Flume Belt",
 		left_ear="Odnowa Earring",
