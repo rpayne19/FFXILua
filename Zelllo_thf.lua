@@ -11,6 +11,7 @@
         Tag - Will equip TH gear sufficient for initial contact with a mob (either melee, ranged hit, or Aeolian Edge AOE)
         SATA - Will equip TH gear sufficient for initial contact with a mob, and when using SATA
         Fulltime - Will keep TH gear equipped fulltime
+        Note: Cyclone will equip TH gear by default
 --]]
 
 -- Initialization function for this job file.
