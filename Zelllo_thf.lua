@@ -11,7 +11,6 @@
         Tag - Will equip TH gear sufficient for initial contact with a mob (either melee, ranged hit, or Aeolian Edge AOE)
         SATA - Will equip TH gear sufficient for initial contact with a mob, and when using SATA
         Fulltime - Will keep TH gear equipped fulltime
-        Note: Cyclone will equip TH gear by default
 --]]
 
 -- Initialization function for this job file.
@@ -57,6 +56,8 @@ function user_setup()
     -- Additional local binds
     send_command('bind ^` input /ja "Flee" <me>')
     send_command('bind ^= gs c cycle treasuremode')
+    send_command('bind ^w input /equip ring2 "Warp Ring"')
+	
     send_command('bind !- gs c cycle targetmode')
 
     select_default_macro_book()
@@ -66,6 +67,7 @@ end
 function user_unload()
     send_command('unbind ^`')
     send_command('unbind !-')
+	sent_command('unbind ^w')
 end
 
 -- Define sets and vars used by this job file.
@@ -256,9 +258,14 @@ function init_gear_sets()
 		right_ear="Friomisi Earring",
 		left_ring="Shiva Ring +1",
 		right_ring="Shiva Ring +1",
+		back={ name="Toutatis's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
 	}
+	
+	sets.precast.WS['Cyclone'] = sets.precast.WS['Aeolian Edge']
 
-    sets.precast.WS['Cyclone'] = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
+    --sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
+
+    sets.precast.WS['Cyclone'].TH = set_combine(sets.precast.WS['Cyclone'], sets.TreasureHunter)
 
 
     --------------------------------------
@@ -320,50 +327,50 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {
-		ammo="Ginsen",
+		ammo="Staunch Tathlum",
 		head="Meghanada Visor +2",
 		body="Meg. Cuirie +2",
 		hands="Meg. Gloves +2",
 		legs="Mummu Kecks +1",
 		feet="Fajin Boots",
 		neck="Sanctity Necklace",
-		waist="Gishdubar Sash",
+		waist="Flume Belt",
 		left_ear="Odnowa Earring",
 		right_ear="Sherida Earring",
 		left_ring={ name="Dark Ring", augments={'Spell interruption rate down -3%','Phys. dmg. taken -6%',}},
-		right_ring="Warp Ring",
+		right_ring="Moonbeam Ring",
 		back="Solemnity Cape",
 	}
 
     sets.idle.Town = {
-		ammo="Ginsen",
+		ammo="Staunch Tathlum",
 		head="Meghanada Visor +2",
 		body="Meg. Cuirie +2",
 		hands="Meg. Gloves +2",
 		legs="Mummu Kecks +1",
 		feet="Fajin Boots",
 		neck="Sanctity Necklace",
-		waist="Gishdubar Sash",
+		waist="Flume Belt",
 		left_ear="Odnowa Earring",
 		right_ear="Sherida Earring",
 		left_ring={ name="Dark Ring", augments={'Spell interruption rate down -3%','Phys. dmg. taken -6%',}},
-		right_ring="Warp Ring",
+		right_ring="Moonbeam Ring",
 		back="Solemnity Cape",
 	}
 
     sets.idle.Weak = {
-		ammo="Ginsen",
+		ammo="Staunch Tathlum",
 		head="Meghanada Visor +2",
 		body="Meg. Cuirie +2",
 		hands="Meg. Gloves +2",
 		legs="Mummu Kecks +1",
 		feet="Fajin Boots",
 		neck="Sanctity Necklace",
-		waist="Gishdubar Sash",
+		waist="Flume Belt",
 		left_ear="Odnowa Earring",
 		right_ear="Sherida Earring",
 		left_ring={ name="Dark Ring", augments={'Spell interruption rate down -3%','Phys. dmg. taken -6%',}},
-		right_ring="Warp Ring",
+		right_ring="Moonbeam Ring",
 		back="Solemnity Cape",
 	}
 
@@ -375,10 +382,21 @@ function init_gear_sets()
         body="Qaaxo Harness",hands="Pillager's Armlets +1",ring1="Defending Ring",ring2="Beeline Ring",
         back="Canny Cape",waist="Flume Belt",legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
 
-    sets.defense.PDT = {ammo="Iron Gobbet",
-        head="Pillager's Bonnet +1",neck="Twilight Torque",
-        body="Iuitl Vest",hands="Pillager's Armlets +1",ring1="Defending Ring",ring2=gear.DarkRing.physical,
-        back="Iximulew Cape",waist="Flume Belt",legs="Pillager's Culottes +1",feet="Iuitl Gaiters +1"}
+    sets.defense.PDT = {
+		ammo="Staunch Tathlum",
+		head="Meghanada Visor +2",
+		body="Meg. Cuirie +2",
+		hands="Meg. Gloves +2",
+		legs="Mummu Kecks +1",
+		feet="Fajin Boots",
+		neck="Sanctity Necklace",
+		waist="Flume Belt",
+		left_ear="Odnowa Earring",
+		right_ear="Sherida Earring",
+		left_ring={ name="Dark Ring", augments={'Spell interruption rate down -3%','Phys. dmg. taken -6%',}},
+		right_ring="Moonbeam Ring",
+		back="Solemnity Cape",
+	}
 
     sets.defense.MDT = {ammo="Demonry Stone",
         head="Pillager's Bonnet +1",neck="Twilight Torque",
