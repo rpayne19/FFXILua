@@ -179,18 +179,15 @@ sets.buff.Efflux = {}
 -- Precast sets to enhance JAs
 sets.precast.JA['Azure Lore'] = {}
 sets.precast.JA['Provoke'] = {
-    ammo="Aqreqaq Bomblet",
-    head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
+    head="Despair Helm", --todo augment despair helm with 7 enmity (path D)
     body="Emet Harness",
-    hands={ name="Herculean Gloves", augments={'Rng.Acc.+24','"Triple Atk."+4','Accuracy+13','Attack+15',}},
-    legs="Zoar Subligar",
-    feet={ name="Herculean Boots", augments={'Accuracy+19','"Triple Atk."+4','Attack+4',}},
-    neck="Unmoving Collar",
-    waist="Flume Belt +1",
-    left_ear="Cryptic Earring",
-    right_ear="Friomisi Earring",
-    left_ring="Mephitas's Ring",
-    right_ring="Begrudging Ring"
+    hands={ name="Adhemar Wrist. +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
+    legs="Obatala Subligar",
+    neck="Unmoving Collar +1",
+    waist="Sulla Belt",
+    left_ear="Friomisi Earring",
+    left_ring="Begrudging Ring",
+    right_ring="Petrov Ring",
 }
 
 -- Waltz set (chr and vit)
@@ -216,37 +213,37 @@ sets.precast.FC = {
 -- Default set for any weaponskill that isn't any more specifically defined
 sets.precast.WS = {
     ammo="Ginsen",
-	head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
-	body="Assimilator's jubbah +2",
-    legs={ name="Herculean Trousers", augments={'Attack+14','"Triple Atk."+4','DEX+7','Accuracy+8',}},
-    feet={ name="Herculean Boots", augments={'Accuracy+19','"Triple Atk."+4','Attack+4',}},
-	neck=gear.ElementalGorget,
-	waist=gear.ElementalBelt,
-	ear1="Ishvara Earring",
-	ear2="Telos Earring",
-	ring1="Rajas Ring",
-	ring2="Apate Ring",
-    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},
+    head="Adhemar Bonnet +1",
+    body="Adhemar Jacket +1",
+    hands="Adhemar Wrist. +1",
+    legs={ name="Herculean Trousers", augments={'"Dbl.Atk."+2','STR+5','Weapon skill damage +6%','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
+    feet="Adhe. Gamashes +1",
+    neck="Caro Necklace",
+    waist="Windbuffet Belt +1",
+    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +25',}},
+    right_ear="Ishvara Earring",
+    left_ring="Ramuh Ring +1",
+    right_ring="Ramuh Ring +1",
+    back="Bleating Mantle",
 }
 
 sets.precast.WS.acc = set_combine(sets.precast.WS, {hands="Assimilator's Bazubands +2"})
 
 -- Specific weaponskill sets. Uses the base set if an appropriate WSMod version isn't found.
 sets.precast.WS['Requiescat'] = {
-    ammo="Hydrocera",
-    head="Jhakri Coronal +2",
-    body="Jhakri Robe +2",
-    hands="Jhakri Cuffs +2",
-    legs="Jhakri Slops +2",
-    feet="Jhakri Pigaches +2",
-    neck="Sanctity Necklace",
-    waist="Salire Belt",
-    left_ear="Ishvara Earring",
-    right_ear="Lifestorm Earring",
-    left_ring="Epona's Ring",
-    right_ring="Apate Ring",
-    back="Pahtli Cape",
+    ammo="Ginsen",
+    head="Jhakri Coronal +1",
+    body="Jhakri Robe +1",
+    hands="Jhakri Cuffs +1",
+    legs="Jhakri Slops +1",
+    feet="Jhakri Pigaches +1",
+    neck="Phalaina Locket",
+    waist="Porous Rope",
+    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +25',}},
+    right_ear="Ishvara Earring",
+    left_ring="Ramuh Ring +1",
+    right_ring="Ramuh Ring +1",
+    back="Bleating Mantle",
 }
 
 sets.precast.WS['Sanguine Blade'] = {
@@ -266,19 +263,19 @@ sets.precast.WS['Sanguine Blade'] = {
 }
 
 sets.precast.WS['Chant du Cygne'] = {
-    ammo="Jukukik Feather",
-    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    body={ name="Herculean Vest", augments={'Crit. hit damage +4%','AGI+13','Accuracy+3','Attack+13',}},
-    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
-    legs={ name="Herculean Trousers", augments={'Accuracy+10 Attack+10','Crit. hit damage +4%','AGI+5','Attack+5',}},
-    feet="Aya. Gambieras +2",
-    neck="Light Gorget",
+    ammo="Ginsen",
+    head="Adhemar Bonnet +1",
+    body="Adhemar Jacket +1",
+    hands="Adhemar Wrist. +1",
+    legs={ name="Herculean Trousers", augments={'Rng.Acc.+6','Weapon skill damage +4%','DEX+7','Rng.Atk.+9',}},
+    feet="Adhe. Gamashes +1"
+    neck="Caro Necklace",
     waist="Light Belt",
-    left_ear="Mache Earring +1",
-    right_ear="Mache Earring +1",
-    left_ring="Hetairoi Ring",
-    right_ring="Begrudging Ring",
-    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},
+    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +25',}},
+    right_ear="Ishvara Earring",
+    left_ring="Begrudging Ring",
+    right_ring="Ramuh Ring +1",
+    back="Bleating Mantle",
 }
 
 -- Midcast Sets
@@ -399,7 +396,7 @@ sets.midcast['Blue Magic'].Magical = {
     head="Jhakri Coronal +1",
     body={ name="Amalric Doublet +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
-    legs="Jhakri Slops +1",
+    legs={ name="Amalric Slops +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
     neck="Sanctity Necklace",
     waist="Salire Belt",
