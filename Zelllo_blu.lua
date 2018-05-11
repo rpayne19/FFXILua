@@ -268,7 +268,7 @@ sets.precast.WS['Chant du Cygne'] = {
     body="Adhemar Jacket +1",
     hands="Adhemar Wrist. +1",
     legs={ name="Herculean Trousers", augments={'Rng.Acc.+6','Weapon skill damage +4%','DEX+7','Rng.Atk.+9',}},
-    feet="Adhe. Gamashes +1"
+    feet="Adhe. Gamashes +1",
     neck="Caro Necklace",
     waist="Light Belt",
     left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +25',}},
