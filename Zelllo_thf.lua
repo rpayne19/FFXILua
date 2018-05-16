@@ -77,8 +77,10 @@ function init_gear_sets()
     --------------------------------------
 
     sets.TreasureHunter = {
+        --hands feet and JA put THF main at 9 TH
+        --head= { name="Herculean Helm", augments={'MND+11 Mag. Acc.+23', '"Mag. Atk. Bns."+4', '"Treasure Hunter"+2',}},
 		hands={ name="Plun. Armlets +2", augments={'Enhances "Perfect Dodge" effect',}},
-		legs={ name="Herculean Trousers", augments={'Pet: Mag. Acc.+21','Pet: "Subtle Blow"+1','"Treasure Hunter"+2','Accuracy+1 Attack+1',}},
+		--legs={ name="Herculean Trousers", augments={'Pet: Mag. Acc.+21','Pet: "Subtle Blow"+1','"Treasure Hunter"+2','Accuracy+1 Attack+1',}},
 		feet="Skulk. Poulaines +1",
 	}
     --sets.ExtraRegen = {head="Ocelomeh Headpiece +1"}
@@ -260,12 +262,9 @@ function init_gear_sets()
 		right_ring="Shiva Ring +1",
 		back={ name="Toutatis's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
 	}
-	
-	sets.precast.WS['Cyclone'] = sets.precast.WS['Aeolian Edge']
-
-    --sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
-
-    sets.precast.WS['Cyclone'].TH = set_combine(sets.precast.WS['Cyclone'], sets.TreasureHunter)
+    
+    --Cyclone will equip AE base set and combine with TH set always
+    sets.precast.WS['Cyclone'] = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
 
     --------------------------------------
