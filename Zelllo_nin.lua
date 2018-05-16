@@ -34,8 +34,8 @@ function user_setup()
     state.CastingMode:options('Normal', 'Resistant')
     state.PhysicalDefenseMode:options('PDT', 'Evasion')
 
-    gear.MovementFeet = {name="Danzo Sune-ate"}
-    gear.DayFeet = "Danzo Sune-ate"
+    gear.MovementFeet = {name="Danzo Sune-Ate"}
+    gear.DayFeet = "Danzo Sune-Ate"
     gear.NightFeet = "Hachiya Kyahan +3"
     
     select_movement_feet()
