@@ -166,7 +166,23 @@ function init_gear_sets()
 		left_ring="Epona's Ring",
 		right_ring="Mummu Ring",
 		back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},
-	}
+    }
+    
+    sets.precast.WS['Blade: Metsu'] = {
+        ammo="Jukukik Feather",
+        head="Hachiya Hatsu. +3",
+        body="Ken. Samue",
+        hands={ name="Herculean Gloves", augments={'Rng.Acc.+17','"Triple Atk."+4','DEX+9','Attack+12',}},
+        legs="Hiza. Hizayoroi +2",
+        feet={ name="Herculean Boots", augments={'Attack+28','"Triple Atk."+4','AGI+3','Accuracy+5',}},
+        neck="Soil Gorget",
+        waist="Soil Belt",
+        left_ear="Brutal Earring",
+        right_ear="Ishvara Earring",
+        left_ring="Ramuh Ring +1",
+        right_ring="Ramuh Ring +1",
+        back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},
+    }
 
     sets.precast.WS['Aeolian Edge'] = {
 		
