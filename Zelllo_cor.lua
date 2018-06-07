@@ -86,12 +86,12 @@ sets.precast.CorsairRoll = {
     hands="Chasseur's Gants",
     legs={ name="Lanun Culottes +1", augments={'Enhances "Snake Eye" effect',}},
     feet={ name="Lanun Bottes +1", augments={'Enhances "Wild Card" effect',}},
-    neck="Marked Gorget",
+    neck="Regal Necklace",
     waist="Impulse Belt",
     left_ear="Brutal Earring",
     right_ear="Steelflash Earring",
     left_ring="Luzaf's Ring",
-    right_ring="Barataria Ring",
+    --right_ring="Barataria Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+3',}},
 }
 

@@ -99,7 +99,7 @@ function init_gear_sets()
 		right_ear="Ishvara Earring",
 		left_ring="Begrudging Ring",
 		right_ring="Ramuh Ring +1",
-		back="Canny Cape",
+		back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
 
     sets.buff['Trick Attack'] = {
@@ -115,7 +115,7 @@ function init_gear_sets()
 		right_ear="Ishvara Earring",
 		left_ring="Begrudging Ring",
 		right_ring="Ramuh Ring +1",
-		back="Canny Cape",
+		back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
 
     -- Actions we want to use to tag TH.
@@ -192,7 +192,7 @@ function init_gear_sets()
 		right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +25',}},
 		left_ring="Ramuh Ring +1",
 		right_ring="Ramuh Ring +1",
-		back="Canny Cape",
+		back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Honed Tathlum", back="Letalis Mantle"})
 
@@ -295,7 +295,7 @@ function init_gear_sets()
 		right_ear="Neritic Earring",
 		left_ring="Garuda Ring +1",
 		right_ring="Garuda Ring +1",
-		back="Canny Cape",
+		back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
 
     sets.midcast.RA.Acc = {
@@ -310,7 +310,7 @@ function init_gear_sets()
 		right_ear="Neritic Earring",
 		left_ring="Garuda Ring +1",
 		right_ring="Garuda Ring +1",
-		back="Canny Cape",
+		back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
 
 
@@ -410,26 +410,26 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {
 		ammo="Ginsen",
-		head={ name="Adhemar Bonnet +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		body={ name="Adhemar Jacket +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		hands={ name="Adhemar Wrist. +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		legs={ name="Herculean Trousers", augments={'Rng.Atk.+5','"Triple Atk."+4','DEX+5','Accuracy+7',}},
+		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		hands={ name="Herculean Gloves", augments={'Rng.Acc.+17','"Triple Atk."+4','DEX+9','Attack+12',}},
+		legs={ name="Herculean Trousers", augments={'"Store TP"+4','Attack+23','Quadruple Attack +3','Accuracy+9 Attack+9',}},
 		feet={ name="Herculean Boots", augments={'Attack+28','"Triple Atk."+4','AGI+3','Accuracy+5',}},
-		neck="Clotharius Torque",
+		neck="Asperity Necklace",
 		waist="Windbuffet Belt +1",
-		left_ear="Brutal Earring",
-		right_ear="Sherida Earring",
+		left_ear="Steelflash Earring",
+		right_ear="Bladeborn Earring",
 		left_ring="Epona's Ring",
 		right_ring="Oneiros Ring",
-		back="Canny Cape",
+		back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
 		
     sets.engaged.Acc = {
 		ammo="Ginsen",
-		head={ name="Adhemar Bonnet +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		body={ name="Adhemar Jacket +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		hands={ name="Adhemar Wrist. +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		legs="Mummu Kecks +1",
+		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		legs="Mummu Kecks +2",
 		feet="Mummu Gamash. +1",
 		neck="Sanctity Necklace",
 		waist="Windbuffet Belt +1",
@@ -437,41 +437,41 @@ function init_gear_sets()
 		right_ear="Sherida Earring",
 		left_ring="Ramuh Ring +1",
 		right_ring="Ramuh Ring +1",
-		back="Canny Cape",
+		back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
         
     -- Mod set for trivial mobs (Skadi+1)
     sets.engaged.Mod = {
 		ammo="Ginsen",
-		head={ name="Adhemar Bonnet +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		body={ name="Adhemar Jacket +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		hands={ name="Adhemar Wrist. +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		legs={ name="Herculean Trousers", augments={'Rng.Atk.+5','"Triple Atk."+4','DEX+5','Accuracy+7',}},
+		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		hands={ name="Herculean Gloves", augments={'Rng.Acc.+17','"Triple Atk."+4','DEX+9','Attack+12',}},
+		legs={ name="Herculean Trousers", augments={'"Store TP"+4','Attack+23','Quadruple Attack +3','Accuracy+9 Attack+9',}},
 		feet={ name="Herculean Boots", augments={'Attack+28','"Triple Atk."+4','AGI+3','Accuracy+5',}},
-		neck="Clotharius Torque",
+		neck="Asperity Necklace",
 		waist="Windbuffet Belt +1",
-		left_ear="Brutal Earring",
-		right_ear="Sherida Earring",
+		left_ear="Steelflash Earring",
+		right_ear="Bladeborn Earring",
 		left_ring="Epona's Ring",
 		right_ring="Oneiros Ring",
-		back="Canny Cape",
+		back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
 
     -- Mod set for trivial mobs (Thaumas)
     sets.engaged.Mod2 = {
 		ammo="Ginsen",
-		head={ name="Adhemar Bonnet +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		body={ name="Adhemar Jacket +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		hands={ name="Adhemar Wrist. +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}},
-		legs={ name="Herculean Trousers", augments={'Rng.Atk.+5','"Triple Atk."+4','DEX+5','Accuracy+7',}},
+		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		hands={ name="Herculean Gloves", augments={'Rng.Acc.+17','"Triple Atk."+4','DEX+9','Attack+12',}},
+		legs={ name="Herculean Trousers", augments={'"Store TP"+4','Attack+23','Quadruple Attack +3','Accuracy+9 Attack+9',}},
 		feet={ name="Herculean Boots", augments={'Attack+28','"Triple Atk."+4','AGI+3','Accuracy+5',}},
-		neck="Clotharius Torque",
+		neck="Asperity Necklace",
 		waist="Windbuffet Belt +1",
-		left_ear="Brutal Earring",
-		right_ear="Sherida Earring",
+		left_ear="Steelflash Earring",
+		right_ear="Bladeborn Earring",
 		left_ring="Epona's Ring",
 		right_ring="Oneiros Ring",
-		back="Canny Cape",
+		back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
 
     sets.engaged.Evasion = {ammo="Thew Bomblet",

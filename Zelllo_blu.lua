@@ -232,8 +232,8 @@ sets.precast.WS.acc = set_combine(sets.precast.WS, {hands="Assimilator's Bazuban
 -- Specific weaponskill sets. Uses the base set if an appropriate WSMod version isn't found.
 sets.precast.WS['Requiescat'] = {
     ammo="Ginsen",
-    head="Jhakri Coronal +1",
-    body="Jhakri Robe +1",
+    head="Jhakri Coronal +2",
+    body="Jhakri Robe +2",
     hands="Jhakri Cuffs +1",
     legs="Jhakri Slops +1",
     feet="Jhakri Pigaches +1",
@@ -393,7 +393,7 @@ sets.midcast['Blue Magic'].PhysicalHP = set_combine(sets.midcast['Blue Magic'].P
 -- Magical Spells --
 sets.midcast['Blue Magic'].Magical = {
     ammo="Mavi Tathlum",
-    head="Jhakri Coronal +1",
+    head="Jhakri Coronal +2",
     body={ name="Amalric Doublet +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     legs={ name="Amalric Slops +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
@@ -451,11 +451,11 @@ sets.midcast['Blue Magic'].MagicalDex = set_combine(sets.midcast['Blue Magic'].M
 
 sets.midcast['Blue Magic'].MagicAccuracy = {
     ammo="Ghastly Tathlum",
-	head={ name="Amalric Coif +1", augments={'INT+12','Mag. Acc.+25','Enmity-6',}},
+    head="Jhakri Coronal +2",
     body={ name="Amalric Doublet +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     legs={ name="Amalric Slops +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
-    feet="Jhakri Pigaches +2",
+    feet="Jhakri Pigaches +1",
     neck="Sanctity Necklace",
     waist="Eschan Stone",
     left_ear="Friomisi Earring",
@@ -472,7 +472,7 @@ sets.midcast['Blue Magic'].Breath = {
     body={ name="Amalric Doublet +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     legs={ name="Amalric Slops +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
-    feet="Jhakri Pigaches +2",
+    feet="Jhakri Pigaches +1",
     neck="Sanctity Necklace",
     waist="Eschan Stone",
     left_ear="Friomisi Earring",
@@ -486,29 +486,16 @@ sets.midcast['Blue Magic'].Stun = set_combine(sets.midcast['Blue Magic'].MagicAc
 {waist="Chaac Belt"})
 
 sets.midcast['Blue Magic']['White Wind'] = {
-head="Whirlpool Mask",neck="Lavalier +1",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-body="Vanir Cotehardie",hands="Buremte Gloves",ring1="K'ayres Ring",ring2="Meridian Ring",
-back="Fravashi Mantle",waist="Hurch'lan Sash",legs="Enif Cosciales",feet="Hagondes Sabots"}
+    left_ear="Odnowa Earring",
+	back="Moonbeam Cape"
+}
 
 sets.midcast['Blue Magic'].Healing = {
-head="Uk'uxkaj Cap",ear1="Lifestorm Earring",ear2="Loquacious Earring",
-body="Vanir Cotehardie",hands="Buremte Gloves",ring1="Aquasoul Ring",ring2="Sirona's Ring",
-back="Pahtli Cape",legs="Hagondes Pants",feet="Hagondes Sabots"}
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+}
 
 sets.midcast['Blue Magic'].SkillBasedBuff = {
     ammo="Mavi Tathlum",
-    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    body="Assim. Jubbah +2",
-    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
-    legs={ name="Herculean Trousers", augments={'Attack+14','"Triple Atk."+4','DEX+7','Accuracy+8',}},
-    feet={ name="Herculean Boots", augments={'Accuracy+19','"Triple Atk."+4','Attack+4',}},
-    neck="Asperity Necklace",
-    waist="Windbuffet Belt +1",
-    left_ear="Suppanomimi",
-    right_ear="Brutal Earring",
-    left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
-    back={ name="Cornflower Cape", augments={'MP+17','DEX+5','Accuracy+2','Blue Magic skill +10',}},
 }
 
 
@@ -531,7 +518,7 @@ sets.resting = {
     head={ name="Rawhide Mask", augments={'HP+50','Accuracy+15','Evasion+20',}},
     body="Jhakri Robe +2",
     hands="Aya. Manopolas +1",
-    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    legs={ name="Lengo Pants", augments={'INT+5','Mag. Acc.+4','"Mag.Atk.Bns."+1','"Refresh"+1',}},
     feet={ name="Herculean Boots", augments={'Accuracy+19','"Triple Atk."+4','Attack+4',}},
     neck="Loricate Torque +1",
     waist="Shinjutsu-no-Obi",
@@ -545,11 +532,27 @@ sets.resting = {
 sets.idle = {
     ammo="Staunch Tathlum",
     head={ name="Rawhide Mask", augments={'HP+50','Accuracy+15','Evasion+20',}},
-    body="Jhakri Robe +1",
-    hands={ name="Herculean Gloves", augments={'Rng.Acc.+17','"Triple Atk."+4','DEX+9','Attack+12',}},
-    legs={ name="Lengo Pants", augments={'INT+5','Mag. Acc.+4','"Mag.Atk.Bns."+1','"Refresh"+1',}},
-    feet={ name="Herculean Boots", augments={'Attack+28','"Triple Atk."+4','AGI+3','Accuracy+5',}},
+    body="Jhakri Robe +2",
+    hands="Aya. Manopolas +1",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet="Aya. Gambieras +1",
     neck="Twilight Torque",
+    waist="Flume Belt",
+    --left_ear="Handler's Earring +1",
+    right_ear="Odnowa Earring",
+    left_ring={ name="Dark Ring", augments={'Spell interruption rate down -3%','Phys. dmg. taken -6%',}},
+    --right_ring="Jelly Ring",
+    back="Solemnity Cape",
+}
+
+sets.idle.PDT = {
+    ammo="Staunch Tathlum",
+    head="Aya. Zucchetto +1",
+    body="Ayanmo Corazza +1",
+    hands="Aya. Manopolas +1",
+    legs="Aya. Cosciales +1",
+    feet="Aya. Gambieras +1",
+    neck="Loricate Torque +1",
     waist="Flume Belt",
     left_ear="Handler's Earring +1",
     right_ear="Odnowa Earring",
@@ -558,29 +561,13 @@ sets.idle = {
     back="Solemnity Cape",
 }
 
-sets.idle.PDT = {
-    ammo="Staunch Tathlum",
-    head="Aya. Zucchetto +1",
-    body="Ayanmo Corazza +2",
-    hands="Aya. Manopolas +1",
-    legs="Aya. Cosciales +1",
-    feet="Aya. Gambieras +2",
-    neck="Loricate Torque +1",
-    waist="Flume Belt +1",
-    left_ear="Etiolation Earring",
-    right_ear="Eabani Earring",
-    left_ring="Defending Ring",
-    right_ring="Renaye Ring",
-    back="Solemnity Cape",
-}
-
 sets.idle.Cleave = {
 	main="Earth Staff",
     ammo="Staunch Tathlum",
     head={ name="Rawhide Mask", augments={'HP+50','Accuracy+15','Evasion+20',}},
-    body="Jhakri Robe +1",
-    hands={ name="Herculean Gloves", augments={'Rng.Acc.+17','"Triple Atk."+4','DEX+9','Attack+12',}},
-    legs={ name="Lengo Pants", augments={'INT+5','Mag. Acc.+4','"Mag.Atk.Bns."+1','"Refresh"+1',}},
+    body="Jhakri Robe +2",
+    hands="Aya. Manopolas +1",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     feet={ name="Herculean Boots", augments={'Attack+28','"Triple Atk."+4','AGI+3','Accuracy+5',}},
     neck="Twilight Torque",
     waist="Flume Belt",
@@ -595,16 +582,16 @@ sets.idle.Cleave = {
 sets.defense.PDT = {
     ammo="Staunch Tathlum",
     head="Aya. Zucchetto +1",
-    body="Ayanmo Corazza +2",
+    body="Ayanmo Corazza +1",
     hands="Aya. Manopolas +1",
     legs="Aya. Cosciales +1",
-    feet="Aya. Gambieras +2",
+    feet="Aya. Gambieras +1",
     neck="Loricate Torque +1",
-    waist="Flume Belt +1",
-    left_ear="Etiolation Earring",
-    right_ear="Eabani Earring",
-    left_ring="Defending Ring",
-    right_ring="Renaye Ring",
+    waist="Flume Belt",
+    left_ear="Handler's Earring +1",
+    right_ear="Odnowa Earring",
+    left_ring={ name="Dark Ring", augments={'Spell interruption rate down -3%','Phys. dmg. taken -6%',}},
+    right_ring="Jelly Ring",
     back="Solemnity Cape",
 }
 
@@ -618,9 +605,9 @@ sets.defense.MDT = {
     neck="Loricate Torque +1",
     waist="Flume Belt +1",
     left_ear="Etiolation Earring",
-    right_ear="Eabani Earring",
-    left_ring="Defending Ring",
-    right_ring="Renaye Ring",
+    right_ear="Odnowa Earring",
+    left_ring={ name="Dark Ring", augments={'Spell interruption rate down -3%','Phys. dmg. taken -6%',}},
+    --right_ring="Renaye Ring",
     back="Solemnity Cape",
 }
 -- Engaged sets
@@ -631,10 +618,10 @@ sets.defense.MDT = {
 -- Normal melee group
 sets.engaged = {
     ammo="Ginsen",
-    head="Adhemar Bonnet +1",
-    body="Adhemar Jacket +1",
-    hands="Adhemar Wrist. +1",
-    legs={ name="Herculean Trousers", augments={'Rng.Atk.+5','"Triple Atk."+4','DEX+5','Accuracy+7',}},
+    head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    legs={ name="Herculean Trousers", augments={'"Store TP"+4','Attack+23','Quadruple Attack +3','Accuracy+9 Attack+9',}},
     feet={ name="Herculean Boots", augments={'Attack+28','"Triple Atk."+4','AGI+3','Accuracy+5',}},
     neck="Clotharius Torque",
     waist="Windbuffet Belt +1",
@@ -642,15 +629,15 @@ sets.engaged = {
     right_ear="Brutal Earring",
     left_ring="Epona's Ring",
     right_ring="Petrov Ring",
-    back="Bleating Mantle",
+    back="Atheling Mantle",
 }
 
 sets.engaged.Acc = {
     ammo="Ginsen",
-    head="Adhemar Bonnet +1",
-    body="Adhemar Jacket +1",
-    hands="Adhemar Wrist. +1",
-    legs={ name="Herculean Trousers", augments={'Rng.Atk.+5','"Triple Atk."+4','DEX+5','Accuracy+7',}},
+    head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    legs={ name="Herculean Trousers", augments={'"Store TP"+4','Attack+23','Quadruple Attack +3','Accuracy+9 Attack+9',}},
     feet={ name="Herculean Boots", augments={'Attack+28','"Triple Atk."+4','AGI+3','Accuracy+5',}},
     neck="Clotharius Torque",
     waist="Windbuffet Belt +1",
@@ -658,31 +645,31 @@ sets.engaged.Acc = {
     right_ear="Bladeborn Earring",
     left_ring="Ramuh Ring +1",
     right_ring="Ramuh Ring +1",
-    back="Bleating Mantle",
+    back="Atheling Mantle",
 }
 
 sets.engaged.Refresh = {
     ammo="Ginsen",
     head={ name="Rawhide Mask", augments={'HP+50','Accuracy+15','Evasion+20',}},
-    body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    body="Jhakri Robe +2",
     hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
-    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    legs={ name="Lengo Pants", augments={'INT+5','Mag. Acc.+4','"Mag.Atk.Bns."+1','"Refresh"+1',}},
     feet={ name="Herculean Boots", augments={'Accuracy+19','"Triple Atk."+4','Attack+4',}},
-    neck="Decimus Torque",
-    waist="Kentarch Belt",
+    neck="Clotharius Torque",
+    waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
-    right_ear="Cessance Earring",
+    right_ear="Brutal Earring",
     left_ring="Epona's Ring",
     right_ring="Petrov Ring",
-    back="Bleating Mantle",
+    back="Atheling Mantle",
 }
 
 sets.engaged.DW = {
     ammo="Ginsen",
-    head="Adhemar Bonnet +1",
-    body="Adhemar Jacket +1",
-    hands="Adhemar Wrist. +1",
-    legs={ name="Herculean Trousers", augments={'Rng.Atk.+5','"Triple Atk."+4','DEX+5','Accuracy+7',}},
+    head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    legs={ name="Herculean Trousers", augments={'"Store TP"+4','Attack+23','Quadruple Attack +3','Accuracy+9 Attack+9',}},
     feet={ name="Herculean Boots", augments={'Attack+28','"Triple Atk."+4','AGI+3','Accuracy+5',}},
     neck="Clotharius Torque",
     waist="Windbuffet Belt +1",
@@ -690,39 +677,39 @@ sets.engaged.DW = {
     right_ear="Brutal Earring",
     left_ring="Epona's Ring",
     right_ring="Petrov Ring",
-    back="Bleating Mantle",
+    back="Atheling Mantle",
 }
 
 sets.engaged.DW.Acc = {
     ammo="Ginsen",
-    head="Adhemar Bonnet +1",
-    body="Adhemar Jacket +1",
-    hands="Adhemar Wrist. +1",
-    legs={ name="Herculean Trousers", augments={'Rng.Atk.+5','"Triple Atk."+4','DEX+5','Accuracy+7',}},
+    head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    legs={ name="Herculean Trousers", augments={'"Store TP"+4','Attack+23','Quadruple Attack +3','Accuracy+9 Attack+9',}},
     feet={ name="Herculean Boots", augments={'Attack+28','"Triple Atk."+4','AGI+3','Accuracy+5',}},
     neck="Clotharius Torque",
     waist="Windbuffet Belt +1",
-    left_ear="Suppanomimi",
-    right_ear="Brutal Earring",
+    left_ear="Steelflash Earring",
+    right_ear="Bladeborn Earring",
     left_ring="Ramuh Ring +1",
     right_ring="Ramuh Ring +1",
-    back="Bleating Mantle",
+    back="Atheling Mantle",
 }
 
 sets.engaged.DW.Refresh = {
     ammo="Ginsen",
     head={ name="Rawhide Mask", augments={'HP+50','Accuracy+15','Evasion+20',}},
-    body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    body="Jhakri Robe +2",
     hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
-    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    legs={ name="Lengo Pants", augments={'INT+5','Mag. Acc.+4','"Mag.Atk.Bns."+1','"Refresh"+1',}},
     feet={ name="Herculean Boots", augments={'Accuracy+19','"Triple Atk."+4','Attack+4',}},
-    neck="Decimus Torque",
-    waist="Kentarch Belt",
+    neck="Clotharius Torque",
+    waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
-    right_ear="Cessance Earring",
-    left_ring="Ramuh Ring +1",
-    right_ring="Ramuh Ring +1",
-    back="Bleating Mantle",
+    right_ear="Brutal Earring",
+    left_ring="Epona's Ring",
+    right_ring="Petrov Ring",
+    back="Atheling Mantle",
 }
 
 sets.engaged.Learning = set_combine(sets.engaged, sets.Learning)
